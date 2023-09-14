@@ -9,14 +9,16 @@ int main(){
 
     const int ARRAY_SIZE = 10; 
     vector<int> arr;
-
+    cout << "Please enter Number: " << endl;
+    int num;
     for(int i = 0; i < ARRAY_SIZE; i++){
-        arr.push_back(2);
+        cin >> num;
+        arr.push_back(num);
     }
 
     int sum = listSum(arr),
         prod = listProduct(arr);
-        
+
     cout << sum << endl;
     cout << prod << endl;
     return 0;
