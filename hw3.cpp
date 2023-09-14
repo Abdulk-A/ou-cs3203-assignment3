@@ -4,6 +4,8 @@ using namespace std;
 
 int listSum(vector<int>arr);
 int listProduct(vector<int>arr);
+vector<int> reverseList(vector<int>arr);
+
 
 int main(){
 
@@ -21,6 +23,9 @@ int main(){
 
     cout << sum << endl;
     cout << prod << endl;
+
+    vector<int> rArr = reverseList(arr);
+    
     return 0;
 }
 
@@ -42,4 +47,13 @@ int listProduct(vector<int>arr){
     }
 
     return prod;
+}
+
+vector<int> reverseList(vector<int>arr){
+    vector<int> rArr;
+    for(int i = arr.size() -1 ; i >= 0; i--){
+        rArr.push_back(arr[i]);
+    }
+
+    return rArr;
 }
