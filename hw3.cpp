@@ -5,7 +5,7 @@ using namespace std;
 int listSum(vector<int>arr);
 int listProduct(vector<int>arr);
 vector<int> reverseList(vector<int>arr);
-
+void printArr(const vector<int>& arr);
 
 int main(){
 
@@ -25,7 +25,7 @@ int main(){
     cout << prod << endl;
 
     vector<int> rArr = reverseList(arr);
-    
+    printArr(rArr);
     return 0;
 }
 
@@ -37,6 +37,13 @@ int listSum(vector<int>arr){
     }
 
     return sum;
+}
+
+void printArr(const vector<int>& arr){
+    for(int i = 0; i < arr.size(); i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
 }
 
 int listProduct(vector<int>arr){
