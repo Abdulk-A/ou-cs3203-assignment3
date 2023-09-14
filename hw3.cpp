@@ -5,6 +5,10 @@ using namespace std;
 int listSum(vector<int>arr);
 int listProduct(vector<int>arr);
 
+/*
+    This is for part 10 of assignment 3, hope you're having a good day.
+*/
+
 int main(){
 
     const int ARRAY_SIZE = 10; 
