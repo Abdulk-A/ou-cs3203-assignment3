@@ -7,6 +7,10 @@ int listProduct(vector<int>arr);
 vector<int> reverseList(vector<int>arr);
 void printArr(const vector<int>& arr);
 
+/*
+    This is for part 10 of assignment 3, hope you're having a good day.
+*/
+
 int main(){
 
     const int ARRAY_SIZE = 10; 
